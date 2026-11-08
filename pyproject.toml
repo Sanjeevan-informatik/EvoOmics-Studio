@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evoomics-studio"
+version = "0.1.0"
+description = "Reproducible foundations for evolutionary genomics and omics analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Sanjeevan Arumuham Vivekanantha"}]
+dependencies = []
+
+[project.scripts]
+evoomics = "evoomics.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
